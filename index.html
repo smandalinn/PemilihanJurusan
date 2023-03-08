@@ -136,9 +136,6 @@
                     </div>
                 </div>
 
-                <button class="reset" type="reset" id="resetBtn">
-                    <span class="btnText">Reset</span>
-
 
 
                 </button>
@@ -188,17 +185,17 @@
                 .then(response => {
                     btnLoading.classList.toggle('d-none');
                     btnKirim.classList.toggle('d-none');
-                    alert("Data berhasil dikirim!!<p>");
-                    console.log('Success!', response)
+                    alert("Data berhasil dikirim!!");
+                    console.log('Success!', response,window.location.reload());
                 })
                 .catch(error => {
                     btnLoading.classList.toggle('d-none');
                     btnKirim.classList.toggle('d-none');
                     alert("NIS telah digunakan!!")
-                    console.error('Error!', error.message);
-                    
-            })form.reset();
+                    console.error('Error!', error.message,window.location.reload());
 
+                    
+            })
         })
 
 
